@@ -1,6 +1,6 @@
 import { Table } from "antd";
 import React from "react";
-import { User } from "../project-list/search-panel";
+import { User } from "./search-panel";
 
 interface Project {
   id: string;
@@ -38,6 +38,6 @@ export const List = ({ users, list }: ListProps) => {
         },
       ]}
       dataSource={list}
-    ></Table>
+    />
   );
 };
